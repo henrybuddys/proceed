@@ -18,6 +18,12 @@
                 background-size: cover;
                 background-size: 100% 100%;
         }
+         .overlaydiv{
+             position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #faebd745;
+}
         .center-button {
             padding: 30px 30px;
             font-size: 20px;
@@ -26,6 +32,7 @@
             color: white;
             border: solid #fff;
             border-radius: 5px;
+            z-index:999;
         }
         .center-button:hover {
             background-color: #45a049;
@@ -56,6 +63,7 @@
     </script>
 </head>
 <body >
+   <div class="overlaydiv"></div>
     <button style="background-image: url;"class="center-button">Click to Proceed</button>
 </body>
 </html>
